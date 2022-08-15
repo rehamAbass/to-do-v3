@@ -9,6 +9,7 @@ const Task = ({ key, index, task, deleteTask, toggleTask }) => {
             <p key={key}>
                 <button
                     style={{
+                        fontFamily: 'Milonga',
                         backgroundColor: "rgba(0, 0, 0, 0)",
                         borderColor: "rgba(0,0,0,0)"
                     }}
@@ -18,7 +19,7 @@ const Task = ({ key, index, task, deleteTask, toggleTask }) => {
                 <FaTimes
                     style={{
                         color: 'rgba(0,40,90,0.25)', cursor: 'pointer', marginLeft: "5px",
-                        marginInlineEnd: "0%", paddingRight: "0px", float: 'right',
+                        marginInlineEnd: "0%", paddingRight: "0px", float: 'right',fontSize:"x-small",
                     }}
                     onClick={() => { deleteTask(task.id) }}
                 />

@@ -14,17 +14,17 @@ import z3etr from './z3etr.mp3'
 
 let tracksArray = [
     { audio: new Audio(relax), name: 'Relax', id: 1 },
-    { audio: new Audio(newYork), name: 'newYork', id: 7 },
-    { audio: new Audio(nwantiti), name: 'nwantiti', id: 8 },
+    { audio: new Audio(newYork), name: 'NewYork', id: 7 },
+    { audio: new Audio(nwantiti), name: 'Nwantiti', id: 8 },
     { audio: new Audio(indila), name: 'Indela', id: 3 },
-    { audio: new Audio(alof), name: 'אלוף העולם', id: 2 },
-    { audio: new Audio(narkis1), name: 'הולכת איתך', id: 5 },
-    { audio: new Audio(narkis2), name: 'נרקיס לא עוזבת', id: 6 },
-    { audio: new Audio(sama1), name: 'حبيتك', id: 9 },
-    { audio: new Audio(bl2lb), name: 'بلقلب', id: 10 },
-    { audio: new Audio(mat5afesh), name: 'متخافيش', id: 4 },
-    { audio: new Audio(Wenk), name: 'وينك', id: 11 },
-    { audio: new Audio(z3etr), name: 'زعيتر', id: 12 },
+    { audio: new Audio(alof), name: 'ALOF', id: 2 },
+    { audio: new Audio(narkis1), name: 'Narkis 1', id: 5 },
+    { audio: new Audio(narkis2), name: 'Narkis', id: 6 },
+    { audio: new Audio(sama1), name: 'Ha ba itak', id: 9 },
+    { audio: new Audio(bl2lb), name: 'Bl ♥ ', id: 10 },
+    { audio: new Audio(mat5afesh), name: 'MT-5afesh', id: 4 },
+    { audio: new Audio(Wenk), name: 'Wenak', id: 11 },
+    { audio: new Audio(z3etr), name: 'Z3etr', id: 12 },
 ];
 
 export default tracksArray;
