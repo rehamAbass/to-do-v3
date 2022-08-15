@@ -1,0 +1,26 @@
+.task {
+    box-shadow: 1px 1px 1px rgba(0, 10, 75, 0.268);
+    border-radius: 1px;
+    margin: 0px;
+    padding: 0px ;
+     cursor: pointer;
+    text-align: start;
+    color: rgb(0, 0, 0);
+   font-size: medium;
+    font-family: cursive;
+        font-style: italic;
+            font-weight: 400 !important;
+                /* background-color: rgba(0, 0, 0, 0.183); */
+
+}
+.strike {
+    text-decoration: line-through;
+}
+
+.task:hover {
+    height: min-content;
+        /* background-color: rgba(255, 255, 255, 0.797); */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* width: fit-content; */
+        max-width: 500px !important;
+}
