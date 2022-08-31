@@ -1,48 +1,13 @@
 import Header from './components/Header/Header.jsx'
 import './App.css';
 import List from './components/ListOfCards/List.jsx'
-// import SignInButton from './components/SignInButton/signin.jsx'
 import AddCardButton from './components/Buttons/AddCardButton/AddCard'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Head from './components/Head/Head.jsx';
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// import a from './components/b.jpg';
 // import pic from './pictures/124.jpg';
 
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-function App() {
-  const [cards, setCards] = useState([])
-  //---------------------------------------------------------------------------------------------------
-  useEffect(() => {
-    //******************************************************* */
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAgS_Z2rAg9jopDcDGscJjUYGrgdmSw_Lw",
-      authDomain: "mynotes-reham.firebaseapp.com",
-      projectId: "mynotes-reham",
-      storageBucket: "mynotes-reham.appspot.com",
-      messagingSenderId: "4536929935",
-      //******************************************************* */
-      appId: "1:4536929935:web:ccfc31776b6d3675ec2afa",
-      measurementId: "G-RGFB78X0CX"
-    };
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-   /*********************************************************************** */
-    localStorage.setItem("myCards", cards);
-    const getCards = async () => {
-      try{
-      let cardsFromServer = await fetchCards(); console.log("cards from server = ", cardsFromServer);
-      }catch(e){
-     setCards(
- [
-    {
+const basicCards= [{
       "id": 270630,
       "title": "React",
       "tasks": [
@@ -63,161 +28,7 @@ function App() {
         }
       ]
     },
-    {
-      "id": 446059,
-      "title": "25/08/2022",
-      "tasks": [
-        {
-          "id": 18274,
-          "completed": false,
-          "text": "לסיים ולסכם קורס ה kubernates מתוך ה linkedin"
-        },
-        {
-          "id": 15017,
-          "completed": false,
-          "text": "לפתור 2 שאלות ב leetcode "
-        },
-        {
-          "id": 2760,
-          "completed": false,
-          "text": "yes 💴 "
-        },
-        {
-          "id": 7319,
-          "completed": false,
-          "text": "reham"
-        },
-        {
-          "id": 7764,
-          "completed": false,
-          "text": "reham abass"
-        },
-        {
-          "id": 16364,
-          "completed": false,
-          "text": "yes yes yes yes yes"
-        }
-      ]
-    },
-    {
-      "id": 95263,
-      "title": "CSS",
-      "tasks": [
-        {
-          "id": 18615,
-          "completed": false,
-          "text": "css - overflow"
-        },
-        {
-          "id": 9690,
-          "completed": false,
-          "text": "css layout - {float , clear}"
-        },
-        {
-          "id": 7967,
-          "completed": false,
-          "text": "css forms"
-        }
-      ]
-    },
-    {
-      "id": 160363,
-      "title": "אפלחקצחות של :",
-      "tasks": [
-        {
-          "id": 19720,
-          "completed": false,
-          "text": "log In"
-        },
-        {
-          "id": 626,
-          "completed": false,
-          "text": "change theme"
-        },
-        {
-          "id": 19526,
-          "completed": false,
-          "text": "upload pictures"
-        },
-        {
-          "id": 2858,
-          "completed": false,
-          "text": "save 🔗  links"
-        },
-        {
-          "id": 7152,
-          "completed": false,
-          "text": "media player ▶ "
-        },
-        {
-          "id": 16889,
-          "completed": false,
-          "text": "change color of card !"
-        }
-      ]
-    },
-    {
-      "id": 538563,
-      "title": "Design Patterns",
-      "tasks": [
-        {
-          "id": 19760,
-          "completed": false,
-          "text": "Observer"
-        },
-        {
-          "id": 12926,
-          "completed": false,
-          "text": "Factory"
-        },
-        {
-          "id": 4832,
-          "completed": false,
-          "text": "Decorator"
-        },
-        {
-          "id": 16592,
-          "completed": false,
-          "text": "Adapter"
-        },
-        {
-          "id": 13514,
-          "completed": false,
-          "text": "proxy"
-        },
-        {
-          "id": 13751,
-          "completed": false,
-          "text": "command"
-        },
-        {
-          "id": 3552,
-          "completed": false,
-          "text": "template"
-        },
-        {
-          "id": 10432,
-          "completed": false,
-          "text": "state"
-        },
-        {
-          "id": 14981,
-          "completed": false,
-          "text": "bridge"
-        },
-        {
-          "id": 3014,
-          "completed": false,
-          "text": "prototype"
-        },
-        {
-          "id": 2351,
-          "completed": false,
-          "text": "facade"
-        }
-      ]
-    },
-    {
+      {
       "id": 84630,
       "title": "Kubernates :",
       "tasks": [
@@ -238,18 +49,43 @@ function App() {
         },
       ]
     },
-  ]);
-  console.log('hehehehhe success to catch the error ^*^ , error =',e);
-
-      }
-      finally{
+  ];
+  //-------------------------------------------------------------
+  function App() {
+  const [cards, setCards] = useState([])
+  //---------------------------------------------------------------------------------------------------
+  const getCards = async (newCards) => {
+     try{
+      let cardsFromServer = await fetchCards();
+       console.log("cards from server = ", cardsFromServer);
+       setCards(cardsFromServer);
+      }catch(e){
+       console.log('hehehehhe success to catch the error ^*^ , error =',e);
+       setCards(newCards);
+     }
+       finally{
         console.log('I am in finally');
+        
       }
     }
+//--------------------------------------------------------------------------
 
+useEffect(()=>{
+  
+  // localStorage.setItem('cards', cards);
+//  console.log('cards changed now!,storage = ', localStorage.getItem('cards'));
+},[cards])
+//-------------------------------------------------------------
+  useEffect(() => {
+    // let storage = localStorage.getItem('cards');
 
-    getCards()
-
+    // if ((storage === null )|| storage === '') { //(!storage)||
+    getCards(basicCards)
+    //  localStorage.setItem('cards', basicCards);
+    // }
+    // else{
+      // getCards(storage);
+    // }
   }, [])
   //------------------------------------------------------------------------------------------------------
   // Fetch Tasks
@@ -263,14 +99,14 @@ function App() {
     }
     else {
       console.log(" failed to load data from server");
-      alert("can not fetch data! ");
-
+      // alert("can not fetch data! ");
   }
 
   }
   //---------------------------------------------------------------------
   const deleteCard = async (id) => {
     let temp = cards.filter(c => c.id !== id);
+    try{
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'DELETE',
       headers: {
@@ -279,37 +115,21 @@ function App() {
     });
     let data = await res.json();
     if (res.status < 300 && res.status >= 200) {
-      await fetchCards();
-    }
-    else{
-      console.log("failed to remove card from server, gonna remove it locally :")
+      // await getCards();
+    }}
+    catch(e){
+          console.log("catched error , failed to remove card from server, gonna remove it locally ,error= ",e)
+// setCards(newCards);
+           }
+           finally{
       let newCards = cards.filter( c => c.id !== id );
-      setCards(newCards);
-      console.log('after deleteing : cards = ', cards );
-    }
+    await getCards(newCards);
+    // setCards(newCards);
+    //  localStorage.setItem('cards', newCards);
+           }
   }
   //---------------------------------------------------------------------------------------------------
-  //fetch card
-  // const getCard = async (id) => {
-  //   let tempc = cards.filter(c => c.id === id);
-  //   tempc = tempc[0];
-  //   return tempc;
-  //   const res = await fetch(`http://localhost:5000/cards/${id}`);
-  //   if (res.status < 300 && res.status >= 200) {
-  //     console.log(' success to fetch again from server');
-  //   }
-  //   const data = await res.json()
-  //   return data
-  // }
-  //-------------------------------------------------------------------------------
-  //Fetch Task
-  // const getTask = async (id_card, id_task) => {
-  //   const res = await fetch(`http://localhost:5000/cards/${id_card}/tasks/${id_task}`)
-  //   const data = await res.json()
-  //   return data
-  // }
-  //-------------------------------------------------------------------------------------------------
-  const addTask = async (id, text) => {
+ const addTask = async (id, text) => {
     let card = cards.filter(c => c.id === id);
     card = card[0];
     let updatedTasks = card.tasks;
@@ -321,6 +141,7 @@ function App() {
     updatedTasks = [...updatedTasks, newTask];
     const updatedCard = { id: id, title: card.title, tasks: updatedTasks }
     // let ourCards = cards.map(c => c.id === id ? updatedCard : c);
+    try{
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
@@ -329,19 +150,14 @@ function App() {
       body: JSON.stringify(updatedCard),
     })
     const data = await res.json()
-
-      let ourCards = cards.map(c => c.id ===id? updatedCard:c)
-
-    if (res.status < 300 && res.status >= 200) {
-      // setCards(ourCards);
-      // await fetchCards();
-    }
-    else{
-      console.log('failed to save to Backend , saved locally')
-      // setCards(ourCards);
-    }
-    setCards(ourCards);
+  }catch(e){
+    console.log('catched erroe , failed to save to Backend , saved locally, error :',e)
+  }finally{
+      let newCards = cards.map(c => c.id ===id? updatedCard:c)
+       await getCards(newCards);
+        // localStorage.setItem('cards', newCards);
   }
+}
   //-----------------------------------------------------------------------------------------------
   const addNewCard = async (title) => {
     let newId = Math.floor(Math.random() * 17890) * 31;
@@ -349,6 +165,7 @@ function App() {
     // cards.push(newCard);
     let newCards = [...cards];
     newCards.push(newCard);
+    try{
     const res = await fetch('http://localhost:5000/cards', {
       method: 'POST',
       headers: {
@@ -357,12 +174,12 @@ function App() {
       body: JSON.stringify(newCard),
     })
     const data = await res.json()
-    if (res.status < 300 && res.status >= 200) {
-      // await fetchCards();
-      // setCards(newCards);
-    }
-    else { alert('Error Adding new card'); }
-    setCards(newCards);
+  }catch(e){
+//  alert('catched error , fail to add new card, error: ',e);
+   }finally{
+     await getCards(newCards);
+      // localStorage.setItem('cards', newCards);
+   }
   }
   //-------------------------------------------------------------------------------------------------
   const toggleTask = async (id, id_task) => {
@@ -398,12 +215,9 @@ function App() {
     // else { alert('Error change completed for task :', task.id); }
   }
   //========================================================================
-  //---------------------------------------------------------------------
-  //---------------------------------------------------------------------------------------------------
   // Delete Task
   const deleteTask = async (id, id_task) => {
-    // console.log("Reham - u R in delete task !!!!!!!!!!");
-    let card = cards.filter(c => c.id === id);
+     let card = cards.filter(c => c.id === id);
     card = card[0];
     let updatedTasks = card.tasks.filter(t => t.id !== id_task);
 
@@ -412,7 +226,7 @@ function App() {
       title: card.title,
       tasks: updatedTasks
     }
-
+    try{
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
@@ -420,21 +234,17 @@ function App() {
       },
       body: JSON.stringify(updatedCard),
     })
-    const data = await res.json()
-  
-    if (res.status < 300 && res.status >= 200) {
-      // await fetchCards();
-      console.log("Success to delete the task from server!! ");
-     
+    const data = await res.json();
+     console.log("Success to delete the task from server!! ");
+  }catch(e){
+     console.log('catched error , failed to delete task from server , error = ',e);
     }
-    else { alert('Error Deleting This Task from server'); }
-
-    // let newCards = [...cards];
-    let newCards = cards.map(c => c.id === id ? updatedCard:c  )
-    console.log('after updating the card in delete task, the new arr :',newCards);
-    setCards(newCards);
-
-  }
+   finally{
+    let newCards = cards.map(c => c.id === id ? updatedCard:c )
+     await getCards(newCards);
+      // localStorage.setItem('cards', newCards);
+   }
+ }
   //-------------------------------------------------------------------------------------------------------
   return (
     <div className="App">
