@@ -1,23 +1,26 @@
 .addList {
-    color: black;
-    font-size:larger;
+    /* color: white; */
+
+    background-color:white;
+    /* rgba(0,210,210,0.9); */
+    font-size:x-large;
     align:center;
         /* font-family: cursive; */
     /* font-style: italic; */
-    /* box-shadow: 1px 1px 1px 1px rgba(86, 244, 236, 0.543); */
-    box-shadow: 1px 1px 1px 1px rgba(0, 10, 104, 1);
+    /* box-shadow: 1px 1px 8px 3px rgba(0, 255, 1, 0.9); */
+    /* box-shadow: 1px 1px 5px 2px rgba(200, 200, 200, 0.5); */
     min-width: max-content;
     height: min-content;
     /* max-width: 3em; */
-    border-radius: 14%;
+    border-radius: 40%; 
 
 }
 
 .addList:hover {
     /* background-color: rgba(20, 206, 57, 0.44); */
     cursor: pointer;
-    color:white;
-    background-color: rgba(98, 91, 248, 0.877);
+    /* color:white;
+    background-color: rgba(98, 0, 148, 0.877); */
 }
 
 .l {

@@ -1,102 +1,232 @@
 {
   "cards": [
     {
-      "id": 35960,
-      "title": "META - Facebook  company",
-      "tasks": [
-        {
-          "id": 17011,
-          "completed": false,
-          "text": "cracking the code interviews"
-        },
-        {
-          "id": 10390,
-          "completed": false,
-          "text": "leetCode"
-        },
-        {
-          "id": 11728,
-          "completed": false,
-          "text": "Codality"
-        },
-        {
-          "id": 10866,
-          "completed": false,
-          "text": "data Structures"
-        },
-        {
-          "id": 256,
-          "completed": false,
-          "text": "Algorithms"
-        },
-        {
-          "id": 10670,
-          "completed": false,
-          "text": "JS course - Udemy"
-        }
-      ]
-    },
-    {
-      "id": 249829,
-      "title": "work",
-      "tasks": [
-        {
-          "id": 13921,
-          "completed": false,
-          "text": "wordpress"
-        }
-      ]
-    },
-    {
       "id": 270630,
       "title": "React",
       "tasks": [
-        {
-          "id": 17669,
-          "completed": false,
-          "text": "study routers"
-        },
         {
           "id": 458,
           "completed": false,
           "text": "fireBase 🔥 "
         },
         {
-          "id": 3105,
-          "completed": false,
-          "text": "finish that course on Udemy"
-        },
-        {
-          "id": 5202,
-          "completed": false,
-          "text": "how to connect to remote mongoDB"
-        },
-        {
           "id": 8028,
           "completed": false,
           "text": "logIn app - make an application just for logIn logOut & register"
+        },
+        {
+          "id": 15663,
+          "completed": false,
+          "text": "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/31794410#content"
         }
       ]
     },
     {
-      "id": 179862,
-      "title": "Reham Abass",
-      "tasks": []
+      "id": 446059,
+      "title": "25/08/2022",
+      "tasks": [
+        {
+          "id": 18274,
+          "completed": false,
+          "text": "לסיים ולסכם קורס ה kubernates מתוך ה linkedin"
+        },
+        {
+          "id": 15017,
+          "completed": false,
+          "text": "לפתור 2 שאלות ב leetcode "
+        },
+        {
+          "id": 2760,
+          "completed": false,
+          "text": "yes 💴 "
+        },
+        {
+          "id": 7319,
+          "completed": false,
+          "text": "reham"
+        },
+        {
+          "id": 7764,
+          "completed": false,
+          "text": "reham abass"
+        },
+        {
+          "id": 16364,
+          "completed": false,
+          "text": "yes yes yes yes yes"
+        }
+      ]
     },
     {
-      "id": 216628,
-      "title": "yes Yes yes",
-      "tasks": []
+      "id": 95263,
+      "title": "CSS",
+      "tasks": [
+        {
+          "id": 18615,
+          "completed": false,
+          "text": "css - overflow"
+        },
+        {
+          "id": 9690,
+          "completed": false,
+          "text": "css layout - {float , clear}"
+        },
+        {
+          "id": 7967,
+          "completed": false,
+          "text": "css forms"
+        }
+      ]
     },
     {
-      "id": 315363,
-      "title": "الله الله ",
-      "tasks": []
+      "id": 160363,
+      "title": "אפלחקצחות של :",
+      "tasks": [
+        {
+          "id": 19720,
+          "completed": false,
+          "text": "log In"
+        },
+        {
+          "id": 626,
+          "completed": false,
+          "text": "change theme"
+        },
+        {
+          "id": 19526,
+          "completed": false,
+          "text": "upload pictures"
+        },
+        {
+          "id": 2858,
+          "completed": false,
+          "text": "save 🔗  links"
+        },
+        {
+          "id": 7152,
+          "completed": false,
+          "text": "media player ▶ "
+        },
+        {
+          "id": 16889,
+          "completed": false,
+          "text": "change color of card !"
+        }
+      ]
     },
     {
-      "id": 54746,
-      "title": "you know",
-      "tasks": []
+      "id": 538563,
+      "title": "Design Patterns",
+      "tasks": [
+        {
+          "id": 19760,
+          "completed": false,
+          "text": "Observer"
+        },
+        {
+          "id": 12926,
+          "completed": false,
+          "text": "Factory"
+        },
+        {
+          "id": 4832,
+          "completed": false,
+          "text": "Decorator"
+        },
+        {
+          "id": 16592,
+          "completed": false,
+          "text": "Adapter"
+        },
+        {
+          "id": 13514,
+          "completed": false,
+          "text": "proxy"
+        },
+        {
+          "id": 13751,
+          "completed": false,
+          "text": "command"
+        },
+        {
+          "id": 3552,
+          "completed": false,
+          "text": "template"
+        },
+        {
+          "id": 10432,
+          "completed": false,
+          "text": "state"
+        },
+        {
+          "id": 14981,
+          "completed": false,
+          "text": "bridge"
+        },
+        {
+          "id": 3014,
+          "completed": false,
+          "text": "prototype"
+        },
+        {
+          "id": 2351,
+          "completed": false,
+          "text": "facade"
+        }
+      ]
+    },
+    {
+      "id": 84630,
+      "title": "Kubernates :",
+      "tasks": [
+        {
+          "id": 3249,
+          "completed": false,
+          "text": "https://kubernetes.io/docs/tutorials/"
+        },
+        {
+          "id": 8260,
+          "completed": false,
+          "text": "https://cloud.google.com/kubernetes-engine"
+        },
+        {
+          "id": 7628,
+          "completed": false,
+          "text": "https://www.linkedin.com/learning/kubernetes-your-first-project/your-first-project-on-kubernetes?autoplay=true"
+        },
+        {
+          "id": 19787,
+          "completed": false,
+          "text": "https://www.ibm.com/cloud/learn/containerization?utm_medium=OSocial&utm_source=Youtube&utm_content=000023UA&utm_term=10010608&utm_id=YTCard-101-Kube-vs-Docker-LH-Containerization-Guide&cm_mmc=OSocial_Youtube-_-Cloud+and+Data+Platform_Cloud+Platform+Digital-_-WW_WW-_-YTCard-101-Kube-vs-Docker-LH-Containerization-Guide&cm_mmca1=000023UA&cm_mmca2=10010608#toc-what-is-co-r25Smlqq"
+        }
+      ]
+    },
+    {
+      "id": 524799,
+      "title": "python ",
+      "tasks": [
+        {
+          "id": 19545,
+          "completed": false,
+          "text": "https://www.udemy.com/course/data-structures-and-algorithms-bootcamp-in-python/"
+        }
+      ]
+    },
+    {
+      "id": 25761,
+      "title": "rere",
+      "tasks": [
+        {
+          "id": 1752,
+          "completed": false,
+          "text": "hi ih"
+        },
+        {
+          "id": 5915,
+          "completed": false,
+          "text": "Bye 👋 "
+        }
+      ]
     }
   ]
 }

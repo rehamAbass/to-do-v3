@@ -14,9 +14,14 @@ const Header = () => {
             // backgroundColor: 'rgba(10,0,10,0.9)',
             // color:'rgb(255,255,255)',
             // backgroundColor: 'rgba(170,165, 185, 0.5)',
-            textAlign: "center",
-            padding:'3px', color:"rgba(100,50,0,1)",marginBottom:'20px',
-            boxShadow: "1px 1px 3px 1px rgba(110,70,5,0.9)",
+            textAlign: "center",marginTop:'15px',
+            padding:'3px', 
+            color:
+            'black'
+            // "rgba(100,50,0,1)"
+            ,marginBottom:'20px',
+            transform:'scale(1.5)',
+            boxShadow: "1px 1px 1px 2px rgba(1,1,1,1)",
         }}>
 
 
@@ -34,7 +39,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/rehamAbass/"
                 target= '_blank'
                 >  Dev. Reham Abass  </a> 
-                    &copy; 
+                    &copy; 2022
         
               </header>
     )

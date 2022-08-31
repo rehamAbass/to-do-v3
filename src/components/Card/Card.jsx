@@ -36,7 +36,7 @@ const Card = ({ key, card, deleteCard, deleteTaskServer,
         <div className='list'
             style={{
                 backgroundColor:background,
-                // backgroundColor: 'rgba(220,230,230,0.9)',
+                // backgroundColor: 'rgba(240,250,250,0.65)',
                  //backgroundColor: 'rgba(240,240,255,0.9)',
             }}
         >
@@ -44,9 +44,12 @@ const Card = ({ key, card, deleteCard, deleteTaskServer,
             <p className='title'>{card.title}
             <FaTimes
                 style={{
-                    color: 'rgba(10,20,80, 0.6)', cursor: 'pointer', marginLeft: "2px",
-                    fontWeight:'100',
-                    marginInlineEnd: "0%", paddingRight: "2px", float: 'right'
+                    color:'rgba(250,250,250,0.6)'
+                    // 'rgba(130,140,130,0.87)' 
+                    // 'rgba(10,20,80, 0.6)'
+                    , cursor: 'pointer', marginLeft: "2px",
+                    // fontWeight:'50',
+                    marginInlineEnd: "0%", paddingRight: "1px", float: 'right'
                 }}
                 onClick={() => { deleteCard(card.id) }}
             /></p>

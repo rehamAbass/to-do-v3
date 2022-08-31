@@ -4,6 +4,7 @@
     /* text-shadow: 20px azure; */
     background-color: rgba(252, 255, 255, 0.9635);
     margin-right:20px;
+    transform:scale(1.5);
 }
 
  .myRepo:hover {

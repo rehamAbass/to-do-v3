@@ -1,12 +1,24 @@
 body {
   margin: 0;
   /* background-color: rgba(235,230,235,0.4); */
-        background-color: rgba(242, 240, 240, 0.7);
-          /* background-color: rgba(241, 244, 244, 0.943); */
-  background-size: cover;
+        /* background-color: */
+        /* blue; */
+        /* black;  */
+        /* rgba(40,40,40,0.9); */
+        /* rgba(90, 110, 158,1); */
+          /* background-color:rgba(240,240,240,0.5); */
+          /* white; */
+          /* black; */
+          /* rgba(100,100,140,0.9); */
+          /* rgba(12, 12,124, 0.7); */
+  /* background-size: cover; */
+ /* background:  url('./w.jpg')  fixed center ; */
+ 
+  /* background:URL('./'); */
 }
 
 code {
   font-family: Consolas, 'Courier New',
     monospace;
 }
+   

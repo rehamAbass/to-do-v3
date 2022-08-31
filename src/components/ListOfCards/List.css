@@ -1,6 +1,7 @@
 .lists {
-    margin: 50px 50px;
-    display: grid;
+    margin: 30px 30px;
+    margin-left:80px; 
+        display: grid;
     /* -ms-grid-row-align: stretch; */
     /* grid-template-columns: 20cm 10cm; */
     /* grid-template-columns: 10ch 10ch 10ch; */
@@ -8,8 +9,8 @@
     /* grid-template-columns: max-content; */
     /* grid-template-columns: 40ex 40ex 40ex; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-items: center;
+        /* align-items: center; */
     text-align:center;
-    justify-content: center;
-    gap:1px;
+    /* justify-content: center; */
+    /* gap:1px; */
     }

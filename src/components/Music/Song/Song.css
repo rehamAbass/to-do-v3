@@ -15,7 +15,7 @@
 }
 
 .oneSong {
-
+    transform:scale(1.2);
     align-self: flex-start;
     align-self: flex-start;
     align-content: space-around;
@@ -35,7 +35,7 @@
 }
 
 .oneSong:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     /* color: rgb(0, 0, 0); */
     cursor: pointer;
 }

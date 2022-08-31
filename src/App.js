@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react'
 import Head from './components/Head/Head.jsx';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-
+// import a from './components/b.jpg';
 // import pic from './pictures/124.jpg';
 
 import { getAnalytics } from "firebase/analytics";
@@ -37,9 +37,217 @@ function App() {
    /*********************************************************************** */
     localStorage.setItem("myCards", cards);
     const getCards = async () => {
-      let cardsFromServer = await fetchCards();
-      console.log("cards from server = ", cardsFromServer);
+      try{
+      let cardsFromServer = await fetchCards(); console.log("cards from server = ", cardsFromServer);
+      }catch(e){
+     setCards(
+ [
+    {
+      "id": 270630,
+      "title": "React",
+      "tasks": [
+        {
+          "id": 458,
+          "completed": false,
+          "text": "fireBase 🔥 "
+        },
+        {
+          "id": 8028,
+          "completed": false,
+          "text": "logIn app - make an application just for logIn logOut & register"
+        },
+        {
+          "id": 15663,
+          "completed": false,
+          "text": "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/31794410#content"
+        }
+      ]
+    },
+    {
+      "id": 446059,
+      "title": "25/08/2022",
+      "tasks": [
+        {
+          "id": 18274,
+          "completed": false,
+          "text": "לסיים ולסכם קורס ה kubernates מתוך ה linkedin"
+        },
+        {
+          "id": 15017,
+          "completed": false,
+          "text": "לפתור 2 שאלות ב leetcode "
+        },
+        {
+          "id": 2760,
+          "completed": false,
+          "text": "yes 💴 "
+        },
+        {
+          "id": 7319,
+          "completed": false,
+          "text": "reham"
+        },
+        {
+          "id": 7764,
+          "completed": false,
+          "text": "reham abass"
+        },
+        {
+          "id": 16364,
+          "completed": false,
+          "text": "yes yes yes yes yes"
+        }
+      ]
+    },
+    {
+      "id": 95263,
+      "title": "CSS",
+      "tasks": [
+        {
+          "id": 18615,
+          "completed": false,
+          "text": "css - overflow"
+        },
+        {
+          "id": 9690,
+          "completed": false,
+          "text": "css layout - {float , clear}"
+        },
+        {
+          "id": 7967,
+          "completed": false,
+          "text": "css forms"
+        }
+      ]
+    },
+    {
+      "id": 160363,
+      "title": "אפלחקצחות של :",
+      "tasks": [
+        {
+          "id": 19720,
+          "completed": false,
+          "text": "log In"
+        },
+        {
+          "id": 626,
+          "completed": false,
+          "text": "change theme"
+        },
+        {
+          "id": 19526,
+          "completed": false,
+          "text": "upload pictures"
+        },
+        {
+          "id": 2858,
+          "completed": false,
+          "text": "save 🔗  links"
+        },
+        {
+          "id": 7152,
+          "completed": false,
+          "text": "media player ▶ "
+        },
+        {
+          "id": 16889,
+          "completed": false,
+          "text": "change color of card !"
+        }
+      ]
+    },
+    {
+      "id": 538563,
+      "title": "Design Patterns",
+      "tasks": [
+        {
+          "id": 19760,
+          "completed": false,
+          "text": "Observer"
+        },
+        {
+          "id": 12926,
+          "completed": false,
+          "text": "Factory"
+        },
+        {
+          "id": 4832,
+          "completed": false,
+          "text": "Decorator"
+        },
+        {
+          "id": 16592,
+          "completed": false,
+          "text": "Adapter"
+        },
+        {
+          "id": 13514,
+          "completed": false,
+          "text": "proxy"
+        },
+        {
+          "id": 13751,
+          "completed": false,
+          "text": "command"
+        },
+        {
+          "id": 3552,
+          "completed": false,
+          "text": "template"
+        },
+        {
+          "id": 10432,
+          "completed": false,
+          "text": "state"
+        },
+        {
+          "id": 14981,
+          "completed": false,
+          "text": "bridge"
+        },
+        {
+          "id": 3014,
+          "completed": false,
+          "text": "prototype"
+        },
+        {
+          "id": 2351,
+          "completed": false,
+          "text": "facade"
+        }
+      ]
+    },
+    {
+      "id": 84630,
+      "title": "Kubernates :",
+      "tasks": [
+        {
+          "id": 3249,
+          "completed": false,
+          "text": "https://kubernetes.io/docs/tutorials/"
+        },
+        {
+          "id": 8260,
+          "completed": false,
+          "text": "https://cloud.google.com/kubernetes-engine"
+        },
+        {
+          "id": 7628,
+          "completed": false,
+          "text": "https://www.linkedin.com/learning/kubernetes-your-first-project/your-first-project-on-kubernetes?autoplay=true"
+        },
+      ]
+    },
+  ]);
+  console.log('hehehehhe success to catch the error ^*^ , error =',e);
+
+      }
+      finally{
+        console.log('I am in finally');
+      }
     }
+
+
     getCards()
 
   }, [])
@@ -50,11 +258,15 @@ function App() {
     const data = await res.json();
     if (res.status < 300 && res.status >= 200) {
       setCards(data);
+      console.log("success to fetch data from server")
       return data
     }
     else {
+      console.log(" failed to load data from server");
       alert("can not fetch data! ");
-    }
+
+  }
+
   }
   //---------------------------------------------------------------------
   const deleteCard = async (id) => {
@@ -67,27 +279,35 @@ function App() {
     });
     let data = await res.json();
     if (res.status < 300 && res.status >= 200) {
-
       await fetchCards();
+    }
+    else{
+      console.log("failed to remove card from server, gonna remove it locally :")
+      let newCards = cards.filter( c => c.id !== id );
+      setCards(newCards);
+      console.log('after deleteing : cards = ', cards );
     }
   }
   //---------------------------------------------------------------------------------------------------
   //fetch card
-  const getCard = async (id) => {
-    let tempc = cards.filter(c => c.id === id);
-    tempc = tempc[0];
-    return tempc;
-    const res = await fetch(`http://localhost:5000/cards/${id}`);
-    const data = await res.json()
-    return data
-  }
+  // const getCard = async (id) => {
+  //   let tempc = cards.filter(c => c.id === id);
+  //   tempc = tempc[0];
+  //   return tempc;
+  //   const res = await fetch(`http://localhost:5000/cards/${id}`);
+  //   if (res.status < 300 && res.status >= 200) {
+  //     console.log(' success to fetch again from server');
+  //   }
+  //   const data = await res.json()
+  //   return data
+  // }
   //-------------------------------------------------------------------------------
   //Fetch Task
-  const getTask = async (id_card, id_task) => {
-    const res = await fetch(`http://localhost:5000/cards/${id_card}/tasks/${id_task}`)
-    const data = await res.json()
-    return data
-  }
+  // const getTask = async (id_card, id_task) => {
+  //   const res = await fetch(`http://localhost:5000/cards/${id_card}/tasks/${id_task}`)
+  //   const data = await res.json()
+  //   return data
+  // }
   //-------------------------------------------------------------------------------------------------
   const addTask = async (id, text) => {
     let card = cards.filter(c => c.id === id);
@@ -109,16 +329,26 @@ function App() {
       body: JSON.stringify(updatedCard),
     })
     const data = await res.json()
+
+      let ourCards = cards.map(c => c.id ===id? updatedCard:c)
+
     if (res.status < 300 && res.status >= 200) {
       // setCards(ourCards);
-      await fetchCards();
+      // await fetchCards();
     }
+    else{
+      console.log('failed to save to Backend , saved locally')
+      // setCards(ourCards);
+    }
+    setCards(ourCards);
   }
   //-----------------------------------------------------------------------------------------------
   const addNewCard = async (title) => {
     let newId = Math.floor(Math.random() * 17890) * 31;
     let newCard = { id: newId, title: title, tasks: [] }
-    cards.push(newCard);
+    // cards.push(newCard);
+    let newCards = [...cards];
+    newCards.push(newCard);
     const res = await fetch('http://localhost:5000/cards', {
       method: 'POST',
       headers: {
@@ -128,9 +358,11 @@ function App() {
     })
     const data = await res.json()
     if (res.status < 300 && res.status >= 200) {
-      await fetchCards();
+      // await fetchCards();
+      // setCards(newCards);
     }
     else { alert('Error Adding new card'); }
+    setCards(newCards);
   }
   //-------------------------------------------------------------------------------------------------
   const toggleTask = async (id, id_task) => {
@@ -191,14 +423,39 @@ function App() {
     const data = await res.json()
   
     if (res.status < 300 && res.status >= 200) {
-      await fetchCards();
-      console.log("Success to delete the task!! ");
+      // await fetchCards();
+      console.log("Success to delete the task from server!! ");
+     
     }
-    else { alert('Error Deleting This Task'); }
+    else { alert('Error Deleting This Task from server'); }
+
+    // let newCards = [...cards];
+    let newCards = cards.map(c => c.id === id ? updatedCard:c  )
+    console.log('after updating the card in delete task, the new arr :',newCards);
+    setCards(newCards);
+
   }
   //-------------------------------------------------------------------------------------------------------
   return (
     <div className="App">
+   {/*  <img
+        src={a}
+        // src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqI5?ver=bfb7'
+        // 'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wpph?ver=ccbe'
+        style={{
+          zIndex: "-1",
+          position: 'fixed',
+          // transform: 'scale(1.216)',
+          marginRight: '0%',
+          // left: '0%',
+          // right: '0%',
+          paddingRight: '0%',
+          top: '0%',
+          buttom: '0%',
+          opacity:'50%',
+        }}
+      />
+      */} 
       {/* <img
         src={pic}
         // src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wqI5?ver=bfb7'
@@ -229,16 +486,16 @@ function App() {
                 }} /> */}
       {/* <SignInButton /> */}
     
-      <Head />
+       <Head />
       <Header /> 
      
 
       <AddCardButton addNewCard={addNewCard} />
 
       {cards.length <= 0 ? 
-      <h1 style ={{align:'center',marginLeft:'44%', 
-           fontSize: 'large',
-        marginTop:'80px',
+      <h1 style ={{align:'center',marginLeft:'42%', 
+           fontSize: 'xx-large',
+        marginTop:'180px',
         width:'350px',
        }}> add some cards</h1> :
         <List

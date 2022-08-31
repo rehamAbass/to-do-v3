@@ -40,8 +40,9 @@ const Song = ({ key, flag, song, stopOthers, updateFlag }) => {
                 <MdStop
                     className='oneSongIcon'
                     style={{
-                        color:'rgba(100,50,0,1)', 
-                        // 'rgba(180, 0,90 ,1)',
+                        color:
+                        // 'rgba(100,50,0,1)', 
+                        'rgba(240, 0,0 ,1)',
                     }}
                     onClick={() => {
                         updateFlag(song.id, false);
