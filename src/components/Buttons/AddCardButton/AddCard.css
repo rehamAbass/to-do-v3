@@ -17,10 +17,10 @@
 }
 
 .addList:hover {
-    /* background-color: rgba(20, 206, 57, 0.44); */
+    background-color: rgba(20, 206, 57, 0.44);
     cursor: pointer;
-    /* color:white;
-    background-color: rgba(98, 0, 148, 0.877); */
+     color:white;
+    background-color: rgba(98, 0, 148, 0.99); 
 }
 
 .l {

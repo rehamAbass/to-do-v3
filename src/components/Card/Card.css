@@ -20,7 +20,7 @@
     border-radius:14px;
     z-index:200;
     word-wrap: break-word;
-     transform: scale(1.27);
+     /* transform: scale(1.27); */
     /* opacity:0.96; */
     }
 input{
