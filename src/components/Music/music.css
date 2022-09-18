@@ -10,6 +10,9 @@
 /*     padding: 20px 10px; */
     margin: 10px;
     display: grid;
+    width: max-width;  
+/*     110%; */
+    
     grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
     align-items: flex-start;
     justify-content: center;
@@ -22,7 +25,7 @@
      color:white;
      box-shadow: 1px 1px 2px 1px rgba(90, 90, 100, 0.9);
      /* margin-botton: 40px; */
-/*      font-family: 'Milonga'; */
+     font-family: 'Milonga';
     font-family: Kleymisska;
 }
 
