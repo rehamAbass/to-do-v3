@@ -324,10 +324,13 @@ useEffect(()=>{
       <AddCardButton addNewCard={addNewCard} />
 
       {cards.length <= 0 ? 
-      <h1 style ={{align:'center',marginLeft:'42%', 
-           fontSize: 'xx-large',
-        marginTop:'180px',
-        width:'350px',
+      <h1 style ={{
+       fontFamily :'Milonga',
+       
+       align:'center',marginLeft:'41%', 
+           fontSize: 40px,
+        marginTop:'150px',
+        width:'600px',
        }}> add some cards</h1> :
         <List
           cards={cards}
