@@ -35,7 +35,7 @@ input{
    
  transform: scale(1.4);
  
- box-shadow: 10px 10px 600px 200px rgba(20,20,60,0.66);
+ box-shadow: 10px 10px 500px 200px rgba(30,20,60,0.7);
     min-height: min-content;
     max-height: max-content;
     width:max-content;
