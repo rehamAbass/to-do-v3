@@ -46,7 +46,7 @@ input{
     /* position:center; */
     /* transform: translate(-50%, -50%); */
      transform: scale(1.4);
-    box-shadow: 1px 1px 60px 10px rgba(20,20,20,0.4);
+    box-shadow: 1px 1px 160px 60px rgba(20,20,20,0.5);
     min-height: min-content;
     max-height: max-content;
     width:max-content;
