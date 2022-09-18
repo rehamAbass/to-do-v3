@@ -29,21 +29,20 @@ const Music = () => {
     return (
         <div className='allSongsDiv'>
 
-        <marquee direction='top' 
-//         loop='2'
-        height='100px'>
+        
         
         {tracksArray.map(s => (
+        <marquee direction='left'  loop='2' >
                 <Song
                     key={s.id}
                     flag={getFlag(s.id)}
                     song={s}
                     stopOthers={stopOthers}
                     updateFlag={updateFlag}
-                />
+                /> </marquee>
             ))
             }
-            </marquee>
+           
         </div>
     );
 }
