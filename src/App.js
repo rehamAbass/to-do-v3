@@ -9,27 +9,6 @@ import Head from './components/Head/Head.jsx';
 
 const basicCards= [
       {
-      "id": 299630,
-      "title": "Reham",
-      "tasks": [
-        {
-          "id": 418,
-          "completed": false,
-          "text": "love love "
-        },
-        {
-          "id": 8018,
-          "completed": false,
-          "text": " Your perfect pack for everyday"
-        },
-        {
-          "id": 13363,
-          "completed": false,
-          "text": "والليل وسماه"
-        }
-      ]
-    }
-      ,{
       "id": 270630,
       "title": "React",
       "tasks": [
@@ -71,6 +50,28 @@ const basicCards= [
         },
       ]
     },
+      
+      {
+      "id": 299630,
+      "title": "Reham",
+      "tasks": [
+        {
+          "id": 418,
+          "completed": false,
+          "text": "love love "
+        },
+        {
+          "id": 8018,
+          "completed": false,
+          "text": " Your perfect pack for everyday"
+        },
+        {
+          "id": 13363,
+          "completed": false,
+          "text": "والليل وسماه"
+        }
+      ]
+    }
   ];
   //-------------------------------------------------------------
   function App() {
