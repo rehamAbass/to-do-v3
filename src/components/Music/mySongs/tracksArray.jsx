@@ -21,10 +21,10 @@ let tracksArray = [
     { audio: new Audio(narkis1), name: 'Narkis 1', id: 5 },
     { audio: new Audio(narkis2), name: 'Narkis', id: 6 },
     { audio: new Audio(sama1), name: 'Ha ba itak', id: 9 },
-    { audio: new Audio(bl2lb), name: 'Bl ♥ ', id: 10 },
-    { audio: new Audio(mat5afesh), name: 'MT-5afesh', id: 4 },
-    { audio: new Audio(Wenk), name: 'Wenak', id: 11 },
-    { audio: new Audio(z3etr), name: 'Z3etr', id: 12 },
+    { audio: new Audio(bl2lb), name: '♥بل ', id: 10 },
+    { audio: new Audio(mat5afesh), name: 'متخفيش', id: 4 },
+    { audio: new Audio(Wenk), name: 'سيلاوي', id: 11 },
+    { audio: new Audio(z3etr), name: 'تتصور', id: 12 },
 ];
 
 export default tracksArray;
