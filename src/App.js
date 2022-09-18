@@ -28,7 +28,7 @@ const basicCards= [
           "text": "والليل وسماه"
         }
       ]
-    },
+    }
       ,{
       "id": 270630,
       "title": "React",
