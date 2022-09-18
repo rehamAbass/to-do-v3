@@ -1,4 +1,5 @@
  .list{
+  animation: mymove 5s infinite;
     padding: 1px 1px;
     height: min-content;
     position: relative;
@@ -23,6 +24,10 @@
      /* transform: scale(1.27); */
     /* opacity:0.96; */
     }
+@keyframes mymove {
+  50% {left: 500px;}
+ 
+}
 input{
     width:'40%' !important;
 }
