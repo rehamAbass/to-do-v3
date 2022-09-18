@@ -50,7 +50,7 @@ input{
     min-height: min-content;
     max-height: max-content;
     width:max-content;
-    border-radius: 15px;
+    border-radius: 10px;
     height: fit-content;
     max-width: 500px !important;
 }
