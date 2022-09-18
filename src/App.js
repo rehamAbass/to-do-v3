@@ -111,6 +111,7 @@ useEffect(()=>{
     // let storage = localStorage.getItem('cards');
 
     // if ((storage === null )|| storage === '') { //(!storage)||
+        
     getCards(basicCards)
     //  localStorage.setItem('cards', basicCards);
     // }
