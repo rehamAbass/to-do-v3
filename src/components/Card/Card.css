@@ -28,12 +28,14 @@ input{
 }
 .list:hover {
     /* justify-content: center; */
-    z-index:1000;
+    z-index:3000;
     /* margin: 80px; */
     /* top:40%; */
-    /* bottom:30%; */
-    /* left:40%; */
 
+      left : 300px;
+      right : 300px;
+      top : 300px;
+      bottom: 200px;
   /* position:absolute;  */
   /* display:none;  */
   /* z-index:99; */
@@ -46,7 +48,7 @@ input{
     /* position:center; */
     /* transform: translate(-50%, -50%); */
      transform: scale(1.4);
-    box-shadow: 1px 1px 400px 180px rgba(20,10,30,0.6);
+    box-shadow: 1px 1px 600px 200px rgba(20,20,60,0.65);
     min-height: min-content;
     max-height: max-content;
     width:max-content;
