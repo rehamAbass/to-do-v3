@@ -33,7 +33,7 @@ const Music = () => {
         
         {tracksArray.map(s => (
         <marquee direction='down'  
-//         loop='10' 
+        loop='1' 
         >
                 <Song
                     key={s.id}
@@ -41,7 +41,8 @@ const Music = () => {
                     song={s}
                     stopOthers={stopOthers}
                     updateFlag={updateFlag}
-                /> </marquee>
+                /> 
+                        </marquee>
             ))
             }
            
