@@ -27,35 +27,21 @@ input{
     width:'40%' !important;
 }
 .list:hover {
-    /* justify-content: center; */
     z-index:3000;
-    /* margin: 80px; */
-    /* top:40%; */
-     
-/*        padding : 200px; */
-/*       left : 300px; */
-/*       right : 300px; */
-/*       top : 300px; */
-/*       bottom: 200px; */
-  /* position:absolute;  */
-  /* display:none;  */
-  /* z-index:99; */
-  /* left:50%; */
   -webkit-transform: translateZ(110%);
-  /* -ms-transform: translateZ(100%); */
   transform: translateZ(110%);
 
-    /* width: content; */
-    /* position:center; */
     /* transform: translate(-50%, -50%); */
-     transform: scale(1.4);
-    box-shadow: 1px 1px 600px 200px rgba(20,20,60,0.65);
+   
+ transform: scale(1.4);
+ 
+ box-shadow: 1px 1px 600px 200px rgba(20,20,60,0.66);
     min-height: min-content;
     max-height: max-content;
     width:max-content;
-    border-radius: 10px;
+    border-radius: 8px;
     height: fit-content;
-    max-width: 500px !important;
+    max-width: 600px !important;
 }
 
 .form-control input {
