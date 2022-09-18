@@ -103,21 +103,11 @@ const basicCards= [
 
 useEffect(()=>{
    localStorage.setItem("cards", JSON.stringify(cards));
-  // localStorage.setItem('cards', cards);
  console.log('cards changed now!,storage = ', localStorage.getItem("cards"));
 },[cards])
 //-------------------------------------------------------------
   useEffect(() => {
-    // let storage = localStorage.getItem('cards');
-
-    // if ((storage === null )|| storage === '') { //(!storage)||
-        
     getCards(basicCards)
-    //  localStorage.setItem('cards', basicCards);
-    // }
-    // else{
-      // getCards(storage);
-    // }
   }, [])
   //------------------------------------------------------------------------------------------------------
   // Fetch Tasks
@@ -131,8 +121,7 @@ useEffect(()=>{
     }
     else {
       console.log(" failed to load data from server");
-      // alert("can not fetch data! ");
-  }
+      }
 
   }
   //---------------------------------------------------------------------
