@@ -29,7 +29,7 @@ const Music = () => {
     return (
         <div className='allSongsDiv'>
 
-        <marquee direction='left' loop='2' >
+        <marquee direction='left' loop='2' height='100px'>
         
         {tracksArray.map(s => (
                 <Song
