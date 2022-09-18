@@ -326,7 +326,7 @@ useEffect(()=>{
       {cards.length <= 0 ? 
       <h1 style ={{
 //        fontFamily :'Milonga',
-       fontFamily: Copperplate,
+       fontFamily: Papyrus,
        align:'center',marginLeft:'41%', 
            fontSize: 40px,
         marginTop:'150px',
