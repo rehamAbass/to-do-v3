@@ -27,7 +27,7 @@ input{
     width:'40%' !important;
 }
 .list:hover {
-    z-index:3000;
+    z-index:1000;
   -webkit-transform: translateZ(110%);
   transform: translateZ(110%);
 
@@ -35,7 +35,7 @@ input{
    
  transform: scale(1.4);
  
- box-shadow: 1px 1px 600px 200px rgba(20,20,60,0.66);
+ box-shadow: 10px 10px 600px 200px rgba(20,20,60,0.66);
     min-height: min-content;
     max-height: max-content;
     width:max-content;
