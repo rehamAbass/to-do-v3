@@ -28,7 +28,10 @@ const Music = () => {
     //----------------------------------------------------------------------------------------
     return (
         <div className='allSongsDiv'>
-            {tracksArray.map(s => (
+
+        <marquee direction='left' loop='2' >
+        
+        {tracksArray.map(s => (
                 <Song
                     key={s.id}
                     flag={getFlag(s.id)}
@@ -38,6 +41,7 @@ const Music = () => {
                 />
             ))
             }
+            </marquee>
         </div>
     );
 }
