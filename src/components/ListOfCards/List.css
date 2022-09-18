@@ -9,9 +9,9 @@
     /* grid-template-columns: 30vh 30vh 30vh 30vh; */
     /* grid-template-columns: max-content; */
     /* grid-template-columns: 40ex 40ex 40ex; */
-    grid-template-columns: 0.6fr 0.6fr 0.6fr;
+    grid-template-columns: 1fr 1fr 1fr;
         /* align-items: center; */
     text-align:center;
     /* justify-content: center; */
-    gap:5px;
+    gap:1px;
     }
