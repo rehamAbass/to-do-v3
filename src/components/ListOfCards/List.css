@@ -1,6 +1,7 @@
 .lists {
-    margin: 30px 30px;
-    margin-left:80px; 
+    margin: 30px 90px;
+    
+/*     margin-left:80px;  */
         display: grid;
     /* -ms-grid-row-align: stretch; */
     /* grid-template-columns: 20cm 10cm; */
