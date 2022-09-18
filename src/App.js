@@ -82,15 +82,17 @@ const basicCards= [
       let cardsFromServer = await fetchCards();
        console.log("cards from server = ", cardsFromServer);
        setCards(cardsFromServer);
-      }catch(e){
+      }catch(e){ 
+            console.log('can not fetch data from server, catch the error ^*^ , error =',e);
              let check = localStorage.getItem("cards");
               if (check !== null) {
                         setCards(JSON.parse(check));
                         console.log("got local storage , cards = ", cards)
                    }
                   else {            
-                  console.log('can not fetch data from server, catch the error ^*^ , error =',e);
+                
                   setCards(newCards);
+                  }
       }
        finally{
         console.log('I am in finally');
@@ -102,7 +104,7 @@ const basicCards= [
 useEffect(()=>{
    localStorage.setItem("cards", JSON.stringify(cards));
   // localStorage.setItem('cards', cards);
-//  console.log('cards changed now!,storage = ', localStorage.getItem('cards'));
+ console.log('cards changed now!,storage = ', localStorage.getItem("cards"));
 },[cards])
 //-------------------------------------------------------------
   useEffect(() => {
