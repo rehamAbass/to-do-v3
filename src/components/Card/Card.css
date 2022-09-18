@@ -3,7 +3,7 @@
     height: min-content;
     position: relative;
     transform: translateZ(0);
-    transform:scale(0.98);
+    transform:scale(0.94);
     display: table;
     table-layout: fixed;
     flex-direction: column;
@@ -17,7 +17,7 @@
     overflow-y: scroll;
     margin: 20px;   
     margin-top:40px;
-    border-radius:14px;
+    border-radius:4px;
     z-index:200;
     word-wrap: break-word;
      /* transform: scale(1.27); */
@@ -50,7 +50,7 @@ input{
     min-height: min-content;
     max-height: max-content;
     width:max-content;
-    border-radius: 20px;
+    border-radius: 15px;
     height: fit-content;
     max-width: 500px !important;
 }
