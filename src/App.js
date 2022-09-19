@@ -325,12 +325,12 @@ useEffect(()=>{
 
       {cards.length <= 0 ? 
       <h1 style ={{
-//       fontFamily :'Milonga',
+//        fontFamily :'Milonga',
        fontFamily: 'Papyrus',
        align:'center',marginLeft:'41%', 
-           fontSize: xx-large,
         marginTop:'150px',
-        width:'600px',
+       transform:scale(2),
+        width:'700px',
        }}> add some cards</h1> :
         <List
           cards={cards}
