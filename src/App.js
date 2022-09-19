@@ -329,9 +329,9 @@ useEffect(()=>{
        fontFamily: 'Papyrus',
        align:'center',marginLeft:'41%', 
         marginTop:'150px',
-       transform:scale(2),
-        width:'700px',
-       }}> add some cards</h1> :
+       fontSize:'40',
+             width:'1000px',
+       }}>Add some cards</h1> :
         <List
           cards={cards}
           deleteCard={deleteCard}
