@@ -328,7 +328,7 @@ useEffect(()=>{
 //        fontFamily :'Milonga',
        fontFamily: Papyrus,
        align:'center',marginLeft:'41%', 
-           fontSize: 40px,
+           fontSize: 34,
         marginTop:'150px',
         width:'600px',
        }}> add some cards</h1> :
