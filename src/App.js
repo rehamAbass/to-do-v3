@@ -88,7 +88,7 @@ const basicCards= [
               if (check !== null) {
                     let temp = JSON.parse(check);
                     if(temp.length() >0){
-                        setCards();
+                        setCards(temp);
                         console.log("got local storage , cards = ", cards)
                     }
                     else{
