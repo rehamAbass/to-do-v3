@@ -6,7 +6,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Head from './components/Head/Head.jsx';
 // import pic from './pictures/124.jpg';
-
+// 
 const basicCards= [
       {
       "id": 270630,
