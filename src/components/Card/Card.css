@@ -43,7 +43,7 @@ z-index : 1001;
 
 
 .list:hover {
-  position: absolute;
+/*   position: absolute; */
 /*  position: fixed; */
    animation: mymove  finite;
     z-index:1000;
