@@ -25,7 +25,7 @@
     /* opacity:0.96; */
     }
 @keyframes mymove {
-  50% {left: 50%;  position: fixed;
+  50% {left: 50%;  position: sticky;
  }
  
 }
