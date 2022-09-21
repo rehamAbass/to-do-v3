@@ -86,12 +86,12 @@ const basicCards= [
             console.log('can not fetch data from server, catch the error ^*^ , error =',e);
              let check = localStorage.getItem("cards"); 
              let temp = JSON.parse(check);
-              if ((temp !== null) && ( temp.length > 0)) {
+              if ((temp !== null) && ( temp.length() > 0) && ( temp !== [])) {
                         setCards(temp);
                         console.log("got local storage , cards = ", cards)
                     }
                   else {            
-                
+                console.log(" storage is not okay so I put newCards");
                   setCards(newCards);
                   }
       }
@@ -145,6 +145,7 @@ useEffect(()=>{
            }
            finally{
       let newCards = cards.filter( c => c.id !== id );
+     await setCards(newCards);
     await getCards(newCards);
     // setCards(newCards);
     //  localStorage.setItem('cards', newCards);
@@ -176,6 +177,7 @@ useEffect(()=>{
     console.log('catched erroe , failed to save to Backend , saved locally, error :',e)
   }finally{
       let newCards = cards.map(c => c.id ===id? updatedCard:c)
+      await setCards(newCards);
        await getCards(newCards);
         // localStorage.setItem('cards', newCards);
   }
@@ -199,6 +201,7 @@ useEffect(()=>{
   }catch(e){
 //  alert('catched error , fail to add new card, error: ',e);
    }finally{
+         await setCards(newCards);
      await getCards(newCards);
       // localStorage.setItem('cards', newCards);
    }
@@ -263,6 +266,7 @@ useEffect(()=>{
     }
    finally{
     let newCards = cards.map(c => c.id === id ? updatedCard:c )
+    await setCards(newCards);
      await getCards(newCards);
       // localStorage.setItem('cards', newCards);
    }
