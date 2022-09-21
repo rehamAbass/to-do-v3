@@ -1,5 +1,5 @@
  .list{
-  animation: mymove 5s infinite;
+
     padding: 1px 1px;
     height: min-content;
     position: relative;
@@ -26,7 +26,7 @@
     }
 @keyframes mymove {
   50% {left: 10%; 
-/*    right: 10%; */
+   right: 10%;
  }
  
 }
@@ -44,6 +44,7 @@ z-index : 1001;
 
 
 .list:hover {
+   animation: mymove 5s infinite;
     z-index:1000;
   -webkit-transform: translateZ(110%);
   transform: translateZ(110%);
