@@ -25,7 +25,9 @@
     /* opacity:0.96; */
     }
 @keyframes mymove {
-  50% {left: 500px;}
+  50% {left: 10%; 
+/*    right: 10%; */
+ }
  
 }
 input{
