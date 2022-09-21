@@ -43,7 +43,8 @@ z-index : 1001;
 
 
 .list:hover {
-  position: absolute;
+/*   position: absolute; */
+ position: sticky;
    animation: mymove 5s infinite;
     z-index:1000;
   -webkit-transform: translateZ(110%);
