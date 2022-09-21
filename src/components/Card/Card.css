@@ -44,7 +44,7 @@ z-index : 1001;
 
 
 .list:hover {
-  position: static;
+  position: absolute;
    animation: mymove 5s infinite;
     z-index:1000;
   -webkit-transform: translateZ(110%);
