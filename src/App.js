@@ -84,18 +84,12 @@ const basicCards= [
        setCards(cardsFromServer);
       }catch(e){ 
             console.log('can not fetch data from server, catch the error ^*^ , error =',e);
-             let check = localStorage.getItem("cards");
-              if (check !== null) {
-                    let temp = JSON.parse(check);
-                    if(temp.length() >0){
+             let check = localStorage.getItem("cards"); 
+             let temp = JSON.parse(check);
+              if ((temp !== null) && ( temp.length > 0)) {
                         setCards(temp);
                         console.log("got local storage , cards = ", cards)
                     }
-                    else{
-                          console.log("local storage get cards length =0 !");
-                    setCards(newCards);
-                    }
-                   }
                   else {            
                 
                   setCards(newCards);
