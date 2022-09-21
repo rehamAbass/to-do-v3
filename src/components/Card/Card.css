@@ -2,7 +2,7 @@
 
     padding: 1px 1px;
     height: min-content;
-    position: relative;
+/*     position: relative; */
     transform: translateZ(0);
     transform:scale(0.94);
     display: table;
@@ -25,8 +25,7 @@
     /* opacity:0.96; */
     }
 @keyframes mymove {
-  50% {left: 10%; 
-   right: 10%;
+  50% {left: 30%;
  }
  
 }
