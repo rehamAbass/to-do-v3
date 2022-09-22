@@ -25,7 +25,7 @@
     /* opacity:0.96; */
     }
 @keyframes mymove {
-  50% {left: 50%;  position: sticky;
+  100% {left: 30%;  z-index:4000;
  }
  
 }
@@ -45,6 +45,7 @@ z-index : 1001;
 .list:hover {
 /*   position: absolute; */
 /*  position: fixed; */
+ animation-fill-mode: forwards;
    animation: mymove  infinite;
     z-index:1000;
   -webkit-transform: translateZ(110%);
