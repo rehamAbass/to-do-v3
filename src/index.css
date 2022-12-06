@@ -3,9 +3,9 @@
 
 body {
    background: linear-gradient(to left,
-        rgba(240, 180, 126, 0.7) 0%,
-          rgba(160, 200, 255, 0.7) 30%,
-          rgba(107, 203, 173, 0.7) 70%);
+        rgba(240, 180, 126, 0.3) 0%,
+          rgba(160, 200, 255, 0.3) 30%,
+          rgba(107, 203, 173, 0.3) 70%);
   
   margin: 0;
   /* background-color: rgba(235,230,235,0.4); */
