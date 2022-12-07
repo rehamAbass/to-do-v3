@@ -1,7 +1,7 @@
 .addList {
     /* color: white; */
 
-    background-color:white;
+    background-color: rgba(10,100,10,0.4);
     /* rgba(0,210,210,0.9); */
     font-size:x-large;
     align:center;
@@ -13,14 +13,15 @@
     height: min-content;
     /* max-width: 3em; */
     border-radius: 40%; 
+    radius: 1px rgba(0,0,0,0.5); 
 
 }
 
 .addList:hover {
-    background-color: rgba(20, 206, 57, 0.44);
+    background-color: rgba(20, 206, 5, 0.3);
     cursor: pointer;
      color:white;
-    background-color: rgba(98, 0, 148, 0.99); 
+  //  background-color: rgba(98, 0, 148, 0.99); 
 }
 
 .l {
