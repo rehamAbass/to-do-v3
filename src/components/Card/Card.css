@@ -11,7 +11,7 @@
     align-content: center;
     text-align: center;
     content: none;
-    border: 2px solid rgb(40,40,40,0.7);
+    border: 1px solid rgb(10,10,10,0.5);
     transition: transform 0.5s ease-out;
     width: 300px;
     font-weight: 600;
@@ -48,12 +48,12 @@ z-index : 1001;
  animation-fill-mode: forwards;
    animation: mymove  infinite;
     z-index:1000;
-  -webkit-transform: translateZ(110%);
-  transform: translateZ(110%);
+  -webkit-transform: translateZ(105%);
+  transform: translateZ(105%);
 
     /* transform: translate(-50%, -50%); */
    
- transform: scale(1.2);
+ transform: scale(1.1);
  
  box-shadow: 10px 10px 400px 200px rgba(30,20,60,0.7);
     min-height: min-content;
