@@ -21,7 +21,7 @@ const Header = () => {
             // "rgba(100,50,0,1)"
             ,marginBottom:'20px',
             transform:'scale(1.1)',
-            boxShadow: "1px 1px 1px 2px rgba(1,1,1,1)",
+            boxShadow: "1px 1px 1px 1px rgba(1,1,1,0.8)",
         }}>
 
 
