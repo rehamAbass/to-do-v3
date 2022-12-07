@@ -55,12 +55,12 @@ z-index : 1001;
    
  transform: scale(1.1);
  
- box-shadow: 5px 5px 300px 200px rgba(0,0,0,0.8);
+ box-shadow: 5px 5px 300px 200px rgba(0,0,0,0.6);
 /*   #1668E2; */
     min-height: min-content;
     max-height: max-content;
     width:max-content;
-    border-radius: 6px;
+/*     border-radius: 6px; */
     height: fit-content;
     max-width: 600px !important;
 }
