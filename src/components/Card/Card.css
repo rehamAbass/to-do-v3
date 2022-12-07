@@ -55,7 +55,7 @@ z-index : 1001;
    
  transform: scale(1.1);
  
- box-shadow: 10px 10px 400px 200px rgba(30,20,60,0.7);
+ box-shadow: 7px 7px 500px 150px #1668E2;
     min-height: min-content;
     max-height: max-content;
     width:max-content;
