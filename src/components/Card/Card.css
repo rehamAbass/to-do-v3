@@ -11,7 +11,7 @@
     align-content: center;
     text-align: center;
     content: none;
-  
+    padding : 20px;
     border: 1px solid rgb(10,10,10,0.5);
  border-radius: 20% 50% / 40% 30%;
 /*   border-radius: 50% 20% / 10% 40%; */
