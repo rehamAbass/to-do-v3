@@ -25,7 +25,7 @@ const basicCards= [
         {
           "id": 15663,
           "completed": false,
-          "text": "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/31794410#content"
+          "text": "אני אלוף העולם"
         }
       ]
     },
@@ -46,7 +46,12 @@ const basicCards= [
         {
           "id": 7628,
           "completed": false,
-          "text": "https://www.linkedin.com/learning/kubernetes-your-first-project/your-first-project-on-kubernetes?autoplay=true"
+          "text": "אני אלוף העולם"
+        },
+        {
+          "id": 76118,
+          "completed": false,
+          "text": "בוחר בכל יום להמשיך לחיות"
         },
       ]
     },
