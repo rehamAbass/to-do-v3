@@ -58,7 +58,7 @@ const basicCards= [
       
       {
       "id": 299630,
-      "title": "Reham",
+      "title": "Reham 💪 ",
       "tasks": [
         {
           "id": 418,
@@ -68,12 +68,17 @@ const basicCards= [
         {
           "id": 8018,
           "completed": false,
-          "text": " Your perfect pack for everyday"
+          "text": "💕💕💕💕💕💕💕💕"
         },
         {
           "id": 13363,
           "completed": false,
           "text": "والليل وسماه"
+        },
+            {
+          "id": 14463,
+          "completed": false,
+          "text": "זה שיר מושלם 😍"
         }
       ]
     },
