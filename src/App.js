@@ -10,7 +10,7 @@ import Head from './components/Head/Head.jsx';
 const basicCards= [
       {
       "id": 270630,
-      "title": "React",
+      "title": "🔥🔥React🔥🔥",
       "tasks": [
         {
           "id": 458,
@@ -63,12 +63,12 @@ const basicCards= [
         {
           "id": 418,
           "completed": false,
-          "text": "love love "
+          "text": "She's one of few artists nowadays, whose songs don't song all the same. Her voice has so much range and can make you feel so many emotions - I felt empowered "
         },
         {
           "id": 8018,
           "completed": false,
-          "text": "💕💕💕💕💕💕💕💕"
+          "text": "💕💕"
         },
         {
           "id": 13363,
@@ -84,7 +84,7 @@ const basicCards= [
     },
        {
       "id": 299630,
-      "title": "ואז אני אהיה כמו שמש לעולםםםם",
+      "title": " 😍ואז אני אהיה כמו ש.מ.ש לעולם",
       "tasks": [
         {
           "id": 411238,
