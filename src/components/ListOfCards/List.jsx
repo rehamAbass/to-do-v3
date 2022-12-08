@@ -4,13 +4,13 @@ import Card from '../Card/Card'
 import '../../App.css'
 const GreenColors = [ 
   
-  '#3dc2ff',
-     '#5260ff',  
-     '#2dd36f',
-  '#ffc409',
-  '#eb445a', 
-    '#222428',
-  ' #92949c',
+  '#3dc2ff', // light blue
+     '#5260ff',  // blue
+     '#2dd36f', // green
+  '#ffc409', //yellow
+  '#eb445a', // red
+    '#222428', // black
+  ' #92949c', // afor
 ]
 
 let colors = GreenColors;
