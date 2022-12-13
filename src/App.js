@@ -60,10 +60,25 @@ const basicCards= [
       "id": 299630,
       "title": "Reham 💪 ",
       "tasks": [
+                 {
+          "id": 4101,
+          "completed": false,
+          "text": "She's one of few artists nowadays"
+        },
         {
           "id": 418,
           "completed": false,
-          "text": "She's one of few artists nowadays, whose songs don't song all the same. Her voice has so much range and can make you feel so many emotions - I felt empowered "
+          "text": "whose songs don't song all the same."
+        },
+                    {
+          "id": 443518,
+          "completed": false,
+          "text": "Her voice has so much range and can make you feel so many emotions "
+        },
+                    {
+          "id": 41992,
+          "completed": false,
+          "text": "I felt empowered "
         },
         {
           "id": 8018,
