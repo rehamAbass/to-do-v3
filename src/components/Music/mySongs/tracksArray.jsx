@@ -17,7 +17,7 @@ let tracksArray = [
     { audio: new Audio(newYork), name: 'NewYork', id: 7 },
     { audio: new Audio(nwantiti), name: 'Nwantiti', id: 8 },
     { audio: new Audio(indila), name: 'Indela', id: 3 },
-    { audio: new Audio(alof), name: 'ALOF', id: 2 },
+    { audio: new Audio(alof), name: 'אלוף העולם💪', id: 2 },
     { audio: new Audio(nrkis), name: 'הולכת איתך', id: 5 },
     { audio: new Audio(narkis2), name: 'בלילות', id: 6 },
     { audio: new Audio(mama), name: 'mama', id: 9 },
