@@ -15,7 +15,7 @@ const basicCards= [
                  {
           "id": 11,
           "completed": false,
-          "text": "אני אלוף העולם בלאהוב קודם את עצמי"
+          "text": "אני אלוף העולם..  בלאהוב קודם את עצמי"
         },
         {
           "id": 12,
@@ -30,12 +30,12 @@ const basicCards= [
                     {
           "id": 14,
           "completed": false,
-          "text": "אני אלוף העולם בליפול אבל לקום כמו ג-ד-ו-ל, אלוף העולם ב-לנסות לפחות.. "
+          "text": "אני אלוף העולם בליפול אבל -  לקום כמו ג-ד-ו-ל , אלוף העולם ב-לנסות לפחות.. "
         },
         {
           "id":15,
           "completed": false,
-          "text": "אני נשרף - אבל בוחר בכל יום לחיות !! 💕"
+          "text": "אני בוחר בכל יום לחיות !! 💕"
         }
       ]
     },
@@ -202,14 +202,14 @@ const basicCards= [
 //              let check = localStorage.getItem("cards"); 
                 let check = localStorage.getItem("myCards");
              let temp = JSON.parse(check);
-              if (temp !== null){ 
-//                   && ( temp.length > 0) && ( temp !== [])) {
+              if ((temp !== null) && ( temp.length > 0) && ( temp !== [])) {
                         setCards(temp);
                         console.log("got local storage , cards = ", cards)
                     }
                   else {            
                 console.log(" storage is not okay so I put newCards");
                   setCards(newCards);
+                  localStorage.setItem("myCards", JSON.stringify(newCards));
                   }
       }
        finally{
@@ -265,6 +265,7 @@ useEffect(()=>{
       let newCards = cards.filter( c => c.id !== id );
      await setCards(newCards);
     await getCards(newCards);
+              localStorage.setItem("myCards", JSON.stringify(newCards));
     // setCards(newCards);
     //  localStorage.setItem('cards', newCards);
            }
@@ -297,6 +298,7 @@ useEffect(()=>{
       let newCards = cards.map(c => c.id ===id? updatedCard:c)
       await setCards(newCards);
        await getCards(newCards);
+             localStorage.setItem("myCards", JSON.stringify(newCards));
         // localStorage.setItem('cards', newCards);
   }
 }
@@ -321,6 +323,7 @@ useEffect(()=>{
    }finally{
          await setCards(newCards);
      await getCards(newCards);
+             localStorage.setItem("myCards", JSON.stringify(newCards));
       // localStorage.setItem('cards', newCards);
    }
   }
@@ -386,6 +389,7 @@ useEffect(()=>{
     let newCards = cards.map(c => c.id === id ? updatedCard:c )
     await setCards(newCards);
      await getCards(newCards);
+             localStorage.setItem("myCards", JSON.stringify(newCards));
       // localStorage.setItem('cards', newCards);
    }
  }
