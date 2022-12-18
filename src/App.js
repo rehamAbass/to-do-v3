@@ -21,11 +21,6 @@ const basicCards= [
           "id": 8028,
           "completed": false,
           "text": "logIn app - make an application just for logIn logOut & register"
-        },
-        {
-          "id": 15663,
-          "completed": false,
-          "text": "אני אלוף העולם"
         }
       ]
     },
@@ -42,17 +37,7 @@ const basicCards= [
           "id": 8260,
           "completed": false,
           "text": "https://cloud.google.com/kubernetes-engine"
-        },
-        {
-          "id": 7628,
-          "completed": false,
-          "text": "אני "
-        },
-        {
-          "id": 76118,
-          "completed": false,
-          "text": "אלוף העולם"
-        },
+        }
       ]
     },
       
@@ -83,17 +68,7 @@ const basicCards= [
         {
           "id": 8018,
           "completed": false,
-          "text": "💕💕"
-        },
-        {
-          "id": 13363,
-          "completed": false,
-          "text": "والليل وسماه"
-        },
-            {
-          "id": 14463,
-          "completed": false,
-          "text": "זה שיר מושלם 😍"
+          "text": "💕💕💕💕💕"
         }
       ]
     },
