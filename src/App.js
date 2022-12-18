@@ -46,12 +46,12 @@ const basicCards= [
         {
           "id": 7628,
           "completed": false,
-          "text": "אני אלוף העולם"
+          "text": "אני "
         },
         {
           "id": 76118,
           "completed": false,
-          "text": "בוחר בכל יום להמשיך לחיות"
+          "text": "אלוף העולם"
         },
       ]
     },
@@ -114,7 +114,70 @@ const basicCards= [
         {
           "id": 12223363,
           "completed": false,
-          "text": "אהיה כמו ציפור נודדת ח.ו.פ.ש.י.ה"
+          "text": "אהיה כמו ציפור נודדת "
+        },
+         {
+          "id": 666363,
+          "completed": false,
+          "text": " ח.ו.פ.ש.י.ה"
+        }
+      ]
+    },
+             {
+      "id": 855555630,
+      "title": "love",
+      "tasks": [
+        {
+          "id": 21238,
+          "completed": false,
+          "text": "building"
+        },
+        {
+          "id": 1111118,
+          "completed": false,
+          "text": "an "
+        },
+        {
+          "id": 1243163,
+          "completed": false,
+          "text": "EmPire"
+        },
+         {
+          "id": 468363,
+          "completed": false,
+          "text": "^^"
+        }
+      ]
+    },
+             {
+      "id": 8000030,
+      "title": "yes",
+      "tasks": [
+        {
+          "id": 4999938,
+          "completed": false,
+          "text": "لا يوجد طريق مختصر إلى مكان يستحق الذهاب إليه."
+        },
+         {
+          "id": 4222238,
+          "completed": false,
+          "text": "دائما خذ في عين الإعتبيار أن قرار النجاح هو أهم من أي شيئ آخر."
+        },
+            {
+          "id": 118,
+          "completed": false,
+          "text": "مهما تصور أو صدق عقل الإنسان, فإنه قادر على تحقيقه."
+        }
+      ]
+    },
+            {
+      "id": 805550,
+      "title": " الشاطئ",
+      "tasks": [
+        {
+          "id": 4994448,
+          "completed": false,
+          "text": "لن تكون قادراً على قطع المحيط إذا لم يكن لديك الشجاعة أن تخسر مرآى الشاطئ."
         }
       ]
     }
