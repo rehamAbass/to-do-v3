@@ -58,8 +58,8 @@ z-index : 1001;
 
     /* transform: translate(-50%, -50%); */
    
- transform: scale(1.1);
- margin :0px;
+ transform: scale(1.25);
+/*  margin :0px; */
  box-shadow: 4px 4px 250px 170px rgba(0,0,100,0.6);
 /*   #1668E2; */
     min-height: min-content;
