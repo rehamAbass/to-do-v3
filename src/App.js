@@ -8,6 +8,37 @@ import Head from './components/Head/Head.jsx';
 // import pic from './pictures/124.jpg';
 // 
 const basicCards= [
+         {
+      "id": 10,
+      "title": "אני אלוף העולם 💪 ",
+      "tasks": [
+                 {
+          "id": 11,
+          "completed": false,
+          "text": "אני אלוף העולם בלאהוב קודם את עצמי"
+        },
+        {
+          "id": 12,
+          "completed": false,
+          "text": "את - משדרת - עסקים - כרגיל !!"
+        },
+                    {
+          "id": 13,
+          "completed": false,
+          "text": "אבל תיכף ייגמר לנו הפתיל"
+        },
+                    {
+          "id": 14,
+          "completed": false,
+          "text": "אני אלוף העולם בליפול אבל לקום כמו ג-ד-ו-ל, אלוף העולם ב-לנסות לפחות.. "
+        },
+        {
+          "id":15,
+          "completed": false,
+          "text": "אני נשרף - אבל בוחר בכל יום לחיות !! 💕"
+        }
+      ]
+    },,
       {
       "id": 270630,
       "title": "🔥🔥React🔥🔥",
