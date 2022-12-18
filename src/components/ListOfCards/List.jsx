@@ -4,12 +4,14 @@ import Card from '../Card/Card'
 import '../../App.css'
 const GreenColors = [ 
   
-  '#3dc2ff', // light blue
-     '#5260ff',  // blue
-     '#2dd36f', // green
-  '#ffc409', //yellow
-  '#eb445a', // red
-    '#222428', // black
+  '#3dc7ff', // light blue
+  '#ffc759', //yellow
+     '#5265ff',  // blue 
+  '#222428', // black
+     '#8dd36f', // green
+ 
+  '#eb445f', // red
+  
   ' #92949c', // afor
 ]
 
