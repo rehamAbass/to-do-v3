@@ -221,7 +221,7 @@ const basicCards= [
 
 useEffect(()=>{
 //    localStorage.setItem("cards", JSON.stringify(cards));
-  localStorage.setItem("myCards", JSON.stringify(this.cards));
+  localStorage.setItem("myCards", JSON.stringify(cards));
  console.log('cards changed now!,storage = ', localStorage.getItem("cards"));
 },[cards])
 //-------------------------------------------------------------
