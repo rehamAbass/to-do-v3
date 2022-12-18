@@ -199,9 +199,11 @@ const basicCards= [
        setCards(cardsFromServer);
       }catch(e){ 
             console.log('can not fetch data from server, catch the error ^*^ , error =',e);
-             let check = localStorage.getItem("cards"); 
+//              let check = localStorage.getItem("cards"); 
+                let check = localStorage.getItem("myCards");
              let temp = JSON.parse(check);
-              if ((temp !== null) && ( temp.length > 0) && ( temp !== [])) {
+              if (temp !== null){ 
+//                   && ( temp.length > 0) && ( temp !== [])) {
                         setCards(temp);
                         console.log("got local storage , cards = ", cards)
                     }
@@ -218,7 +220,8 @@ const basicCards= [
 //--------------------------------------------------------------------------
 
 useEffect(()=>{
-   localStorage.setItem("cards", JSON.stringify(cards));
+//    localStorage.setItem("cards", JSON.stringify(cards));
+  localStorage.setItem("myCards", JSON.stringify(this.cards));
  console.log('cards changed now!,storage = ', localStorage.getItem("cards"));
 },[cards])
 //-------------------------------------------------------------
