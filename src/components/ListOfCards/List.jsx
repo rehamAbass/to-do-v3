@@ -3,16 +3,11 @@ import React from 'react'
 import Card from '../Card/Card'
 import '../../App.css'
 const GreenColors = [ 
-  
-  '#3dc7ff', // light blue
-  '#ffc759', //yellow
-     '#5265ff',  // blue 
-  '#222428', // black
-     '#8dd36f', // green
- 
-  '#eb445f', // red
-  
-  ' #92949c', // afor
+  '#7EC8E3','#0000FF','#000C66','#050A30',
+  //'#3dc7ff', // light blue
+ // '#ffc759', //yellow
+ // '#5265ff',  // blue 
+ //  '#8dd36f', // green
 ]
 
 let colors = GreenColors;
