@@ -3,7 +3,7 @@ import React from 'react'
 import Card from '../Card/Card'
 import '../../App.css'
 const GreenColors = [ 
-  '#C5DAE8','#A3D5FF', '#8D96C0', '#3A4044',
+  '#D16BA5', '#8D96C0', '#83BDB9','#86A8E7',
   
   //'#7EC8E3',
  // '#0000FF','#000C66',
