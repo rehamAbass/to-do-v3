@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 import '../../App.css'
 const GreenColors = [ 
   '#D16BA5', '#8D96C0', '#83BDB9','#86A8E7',
-  'rgba(10,10,10,0.7)',
+  
   //'#7EC8E3',
  // '#0000FF','#000C66',
   //'#3dc7ff', // light blue
